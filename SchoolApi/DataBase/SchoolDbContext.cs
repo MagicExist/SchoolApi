@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using SchoolApi.CoreLayer.DomainLayer.Domain.SchoolDbModels;
+using SchoolApi.Domain.Entities;
+
 
 namespace SchoolApi.DataBase;
 
