@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Persistence.DataBase;
+using SchoolApi.Application.Services;
+using SchoolApi.Domain.Repository;
+using Persistence.Repositories;
 
 
 namespace SchoolApi
@@ -17,6 +20,9 @@ namespace SchoolApi
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+            builder.Services.AddScoped<StudentDBService>();
+            builder.Services.AddScoped<IStudentDBRepository,StudentDBRepository>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

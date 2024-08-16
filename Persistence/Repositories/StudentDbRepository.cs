@@ -2,18 +2,13 @@
 using Persistence.DataBase;
 using SchoolApi.Domain.Entities;
 using SchoolApi.Domain.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
-    internal class StudentDbRepository : IStudentDBRepository
+    public class StudentDBRepository : IStudentDBRepository
     {
         private readonly SchoolDbContext _dbContext;
-        public StudentDbRepository(SchoolDbContext dbContext) 
+        public StudentDBRepository(SchoolDbContext dbContext) 
         {
             _dbContext = dbContext;
         }
