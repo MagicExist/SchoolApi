@@ -1,4 +1,4 @@
-﻿using SchoolApi.CoreLayer.DomainLayer.Domain.SchoolDbModels;
+﻿using SchoolApi.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
