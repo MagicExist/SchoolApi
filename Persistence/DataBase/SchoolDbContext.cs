@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolApi.Domain.Entities;
 
 
-namespace SchoolApi.DataBase;
+namespace Persistence.DataBase;
 
 public partial class SchoolDbContext : DbContext
 {

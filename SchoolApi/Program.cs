@@ -1,6 +1,6 @@
-
 using Microsoft.EntityFrameworkCore;
-using SchoolApi.DataBase;
+using Persistence.DataBase;
+
 
 namespace SchoolApi
 {

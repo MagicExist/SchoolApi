@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApi.Domain", "SchoolA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApi.Application", "SchoolApi.Application\SchoolApi.Application.csproj", "{0A7AAB4C-EBEF-4D85-B09B-043CB8478474}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{68AF9143-BAF4-4933-AA00-32CDB7FFAE31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{E5224AF3-B560-4067-9621-15437F5E3E39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,13 +33,19 @@ Global
 		{0A7AAB4C-EBEF-4D85-B09B-043CB8478474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A7AAB4C-EBEF-4D85-B09B-043CB8478474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A7AAB4C-EBEF-4D85-B09B-043CB8478474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5224AF3-B560-4067-9621-15437F5E3E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5224AF3-B560-4067-9621-15437F5E3E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5224AF3-B560-4067-9621-15437F5E3E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5224AF3-B560-4067-9621-15437F5E3E39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A4D1F874-F597-49F7-B65C-1E965D076E7A} = {68AF9143-BAF4-4933-AA00-32CDB7FFAE31}
 		{986D786F-E9AE-4427-8A4C-3BB896A44F4C} = {038978EF-2FA9-40F6-B36C-15F692A37002}
 		{0A7AAB4C-EBEF-4D85-B09B-043CB8478474} = {038978EF-2FA9-40F6-B36C-15F692A37002}
+		{E5224AF3-B560-4067-9621-15437F5E3E39} = {68AF9143-BAF4-4933-AA00-32CDB7FFAE31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B72B8F64-7E06-4CD2-989E-10501F4786D2}
