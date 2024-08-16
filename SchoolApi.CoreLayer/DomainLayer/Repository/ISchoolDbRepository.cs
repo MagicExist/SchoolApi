@@ -9,5 +9,6 @@ namespace SchoolApi.CoreLayer.DomainLayer.Repository
     internal interface ISchoolDbRepository
     {
         Task<IEnumerable<Student>> GetStudentsAsync();
+        Task<IEnumerable<Professor>> GetProfessorsAsync();
     }
 }
