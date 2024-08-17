@@ -1,4 +1,5 @@
-﻿using SchoolApi.Domain.Entities;
+﻿using SchoolApi.Application.DTOs;
+using SchoolApi.Domain.Entities;
 using SchoolApi.Domain.Repository;
 
 namespace SchoolApi.Application.Services
@@ -11,10 +12,21 @@ namespace SchoolApi.Application.Services
             _studentDBRepository = studentDBRepository;
         }
 
-        public async Task<IEnumerable<Student>> ReadAsync()
+        public async Task<IEnumerable<StudentDto>> ReadAsync()
         {
+            List<StudentDto> studentDtoList = new List<StudentDto>();
             IEnumerable<Student> studentsList = await _studentDBRepository.GetAllStudentsAsync();
-            return studentsList;
+            foreach (Student student in studentsList) 
+            {
+                StudentDto studentDto = new StudentDto() 
+                {
+                    Id = student.Id,
+                    Name = student.Name,
+                    Age = student.Age,
+                };
+                studentDtoList.Add(studentDto);
+            }
+            return studentDtoList;
         }
 
     }

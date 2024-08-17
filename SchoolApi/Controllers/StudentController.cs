@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolApi.Application.DTOs;
 using SchoolApi.Application.Services;
 using SchoolApi.Domain.Entities;
 
@@ -16,7 +17,7 @@ namespace SchoolApi.Controllers
 
 
         [HttpGet]
-        public async Task<IEnumerable<Student>> GetAsync()
+        public async Task<IEnumerable<StudentDto>> GetAsync()
         {
             return await _studentDBService.ReadAsync();
         }
