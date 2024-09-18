@@ -27,6 +27,7 @@ namespace SchoolApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddMemoryCache();
 
             var app = builder.Build();
 
@@ -48,5 +49,3 @@ namespace SchoolApi
         }
     }
 }
-
-//Data Source=.;Initial Catalog=School;Integrated Security=True;Trust Server Certificate=True
